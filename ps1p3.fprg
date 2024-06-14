@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ckmwj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 03:42:39 PM"/>
+        <attribute name="created" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDM6MDM6MDMgUE07Mjg4Mw=="/>
+        <attribute name="edited" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDM6NDI6MzkgUE07MjszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="circumference" type="Integer" array="False" size=""/>
+            <input variable="length"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length * width"/>
+            <assign variable="circumference" expression="(2 * length)+(2 * width)"/>
+            <output expression="&quot;The area of the rectangle is &quot; &amp;area &amp; &quot; square units&quot; &amp;&quot; and the circumference of the rectangle is &quot; &amp;circumference &amp; &quot; units&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
