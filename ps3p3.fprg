@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ckmwj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 06:50:40 PM"/>
+        <attribute name="created" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDY6NDc6NTEgUE07Mjg5Nw=="/>
+        <attribute name="edited" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDY6NTA6NDAgUE07MTsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amount" type="Integer" array="False" size=""/>
+            <declare name="distribution" type="Real" array="False" size=""/>
+            <declare name="earned" type="Real" array="False" size=""/>
+            <input variable="amount"/>
+            <input variable="distribution"/>
+            <assign variable="earned" expression="amount / distribution"/>
+            <output expression="&quot;Each of you will receive $&quot; &amp;earned" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

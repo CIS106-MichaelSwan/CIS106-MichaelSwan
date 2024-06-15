@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ckmwj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-14 06:56:14 PM"/>
+        <attribute name="created" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDY6NTA6NDIgUE07Mjg5MQ=="/>
+        <attribute name="edited" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMTQ7MDY6NTY6MTQgUE07MTszMDA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <assign variable="area" expression="3.14 * (radius * radius)"/>
+            <assign variable="perimeter" expression="(2 * 3.14) * radius"/>
+            <output expression="&quot;The area is &quot; &amp;area" newline="True"/>
+            <output expression="&quot;The perimeter is &quot; &amp;perimeter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
