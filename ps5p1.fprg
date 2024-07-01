@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ckmwj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-30 05:00:48 PM"/>
+        <attribute name="created" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMzA7MDQ6NTM6MzEgUE07Mjg4OA=="/>
+        <attribute name="edited" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDYtMzA7MDU6MDA6NDggUE07MTsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="UnitPrice" type="Real" array="False" size=""/>
+            <declare name="ExtPrice" type="Real" array="False" size=""/>
+            <declare name="Tax" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="UnitPrice" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="UnitPrice" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="ExtPrice" expression="quantity * UnitPrice"/>
+            <assign variable="Tax" expression="ExtPrice * 0.07"/>
+            <assign variable="Total" expression="ExtPrice + Tax"/>
+            <output expression="&quot;Quantity Ordered &quot; &amp;quantity" newline="True"/>
+            <output expression="&quot;Unit Price= $&quot; &amp;UnitPrice" newline="True"/>
+            <output expression="&quot;Extended Price = $&quot; &amp;ExtPrice" newline="True"/>
+            <output expression="&quot;Tax is $&quot; &amp;Tax" newline="True"/>
+            <output expression="&quot;Total = $&quot; &amp;Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
