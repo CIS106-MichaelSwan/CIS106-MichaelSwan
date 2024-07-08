@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ckmwj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-07 06:58:10 PM"/>
+        <attribute name="created" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDctMDc7MDY6NTA6NDEgUE07Mjg5Mw=="/>
+        <attribute name="edited" value="Y2ttd2o7REVTS1RPUC0zSlZPRDROOzIwMjQtMDctMDc7MDY6NTg6MTAgUE07MjszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="exam1" type="Real" array="False" size=""/>
+            <declare name="exam2" type="Real" array="False" size=""/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to compute your average score? (Yes or No)&quot;" newline="True"/>
+            <input variable="response"/>
+            <while expression="response == &quot;yes&quot;">
+                <input variable="lastname"/>
+                <input variable="exam1"/>
+                <input variable="exam2"/>
+                <assign variable="average" expression="(exam1 + exam2)/2"/>
+                <output expression="lastname &amp; &quot;: &quot; &amp; average" newline="True"/>
+                <output expression="&quot;Do you want to compute your average score? (Yes or No)&quot;" newline="True"/>
+                <input variable="response"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
